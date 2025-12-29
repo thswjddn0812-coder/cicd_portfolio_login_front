@@ -25,7 +25,7 @@ const page = () => {
       if (token) {
         api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
         setAccessToken(token);
-        alert("로그인 성공! (토큰 저장됨)");
+        alert("로그인 성공!");
       } else {
         console.error("토큰이 없습니다!", response.data);
         alert("로그인은 성공했는데 토큰이 없어요...");
